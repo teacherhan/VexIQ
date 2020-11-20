@@ -8,5 +8,7 @@ void goBack(float dist){
 
 task main()
 {
+	var distance = 10.00;
 	forward(2,rotations,50);
+	goBack(distance);
 }
