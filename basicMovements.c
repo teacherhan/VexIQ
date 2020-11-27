@@ -15,4 +15,7 @@ task main()
 	setMultipleMotors(leftMotor,rightMotor,50);
 	waitUntil(getDistanceValue(distanceMM)>500);
 	stopMultipleMotors(leftMotor, rightmotor);
+        if(getDistanceValue(distanceMM)<distance){
+           forward(1,rotation, 50);
+        }
 }
